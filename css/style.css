@@ -93,4 +93,219 @@ label {
   cursor: pointer;
 }
 
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: #070707;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #F6F6F6;
+}
+
+svg {
+  fill: #070707;
+}
+
+header {
+  background-color: #FFFFFF;
+}
+
+.color {
+  background-color: #FFFFFF;
+}
+
+body header {
+  background-color: #FFFFFF;
+}
+body header .header_wrapper .menu {
+  padding: 33px 0;
+  display: flex;
+  justify-content: space-between;
+}
+body header .header_wrapper .menu li a {
+  color: #828282;
+}
+body header .header_wrapper .menu li:hover a {
+  color: black;
+}
+body header .header_wrapper .underline {
+  display: flex;
+  justify-content: center;
+}
+body header .header_wrapper .underline div {
+  width: calc(100% - 10px);
+  height: 1px;
+  background-color: #828282;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  color: #828282;
+}
+
+main .main_mySelf {
+  padding: 40px 0 105px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .main_mySelf h1 {
+  font-weight: 700;
+  font-size: 47.34px;
+  max-width: 123.51px;
+  line-height: 58.61px;
+}
+main .main_mySelf p {
+  line-height: 21.83px;
+  max-width: 155.65px;
+}
+main .main_mySelf .input {
+  transform: rotate(-90deg);
+  margin-right: -25px;
+}
+main .main_mySelf .input label {
+  padding: 0 0 0 5px;
+}
+main .main_mySelf .input label:first-of-type {
+  padding-right: 10px;
+  box-sizing: border-box;
+  border-right: 2px solid black;
+}
+main .main_mySelf img {
+  padding-top: 30px;
+}
+main .main_aboutMe {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0;
+}
+main .main_aboutMe h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+main .main_aboutMe p {
+  line-height: 21.83px;
+  text-align: center;
+  max-width: 490px;
+}
+main .main_skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 0 110px;
+}
+main .main_skills h2 {
+  font-size: 34px;
+  line-height: 42.09px;
+  padding-bottom: 70px;
+}
+main .main_skills p {
+  line-height: 21.83px;
+  padding-bottom: 80px;
+}
+main .main_skills .applications {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+main .main_skills .applications .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .main_skills .applications .skill .experience svg:nth-last-of-type(1) {
+  fill: #828282;
+}
+main .main_skills .applications .skill p {
+  height: 85px;
+  display: flex;
+  align-items: center;
+  max-width: 85px;
+  text-align: center;
+  font-size: 14px;
+  color: #828282;
+  padding: 25px 0 40px;
+  line-height: 17.33px;
+}
+main .main_skills .applications .skill:nth-child(2) .experience svg:nth-last-of-type(-n+2) {
+  fill: #828282;
+}
+main .main_portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 115px 0 100px;
+}
+main .main_portfolio h2 {
+  padding: 0 0 50px;
+  font-size: 34px;
+  line-height: 42.09px;
+  font-weight: 700;
+}
+main .main_portfolio img {
+  padding-bottom: 45px;
+}
+main .main_portfolio a {
+  text-decoration: underline;
+  color: #070707;
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+main .main_portfolio a:nth-last-child(1) {
+  margin-bottom: 0;
+}
+main .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0;
+}
+main .contacts h2 {
+  padding: 0 0 20px;
+  font-size: 34px;
+  font-weight: 700;
+}
+main .contacts .chat {
+  font-size: 18px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+main .contacts button {
+  padding: 13px 30px;
+  background-color: #070707;
+  color: #FFFFFF;
+  border-radius: 20px;
+  margin-bottom: 85px;
+}
+main .contacts .links {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 45px;
+}
+main .contacts .like {
+  font-size: 14px;
+  color: #828282;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,37 @@
+body{ 
+    header{
+        background-color:#FFFFFF;
+
+        .header_wrapper{
+            .menu{
+                padding: 33px 0 ;
+                display: flex;
+                justify-content: space-between;
+                li{
+                    a{
+                        color: #828282;
+                    }
+            
+                }
+                li:hover{
+                    a{color:black
+
+                    }
+                }
+            }
+            .underline{
+                display: flex;
+                justify-content: center;
+                div{
+                    width: calc(100% - 10px);
+                    height: 1px;
+                    background-color: #828282;
+                }
+        
+            }
+        }
+        
+
+    }
+}
+
