@@ -1,0 +1,35 @@
+@media(max-width: 767px){
+    main{
+        .burger{
+            display: block;
+        }
+        .main_mySelf{
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 60px;
+            .input{
+                display: none;
+            }
+        }
+        .main_aboutMe{
+            padding-top: 70px;
+        }
+        .main_skills{
+                h2{
+                    padding-bottom: 35px ;
+                } 
+                p{
+                    padding-bottom: 50px;
+                }
+            .applications{
+                flex-direction: column;
+            
+                .skill:not(:nth-last-child(1)){
+                    padding-bottom: 50px;
+                    }
+                }
+            }
+            .sub_menu.moveLeft{
+                transform: translateX(100vw)}
+         }
+    }       

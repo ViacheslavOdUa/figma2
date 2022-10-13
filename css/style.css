@@ -109,6 +109,8 @@ body {
   font-weight: 500;
   font-size: 18px;
   background-color: #F6F6F6;
+  padding: 0;
+  margin: 0;
 }
 
 svg {
@@ -123,13 +125,28 @@ header {
   background-color: #FFFFFF;
 }
 
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 767px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 320px;
+  }
+}
 body header {
   background-color: #FFFFFF;
 }
 body header .header_wrapper .menu {
   padding: 33px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 body header .header_wrapper .menu li a {
   color: #828282;
@@ -147,6 +164,11 @@ body header .header_wrapper .underline div {
   background-color: #828282;
 }
 
+@media (max-width: 767px) {
+  header {
+    display: none;
+  }
+}
 input {
   display: none;
 }
@@ -295,9 +317,14 @@ main .contacts button {
   color: #FFFFFF;
   border-radius: 20px;
   margin-bottom: 85px;
+  transition: all 100ms;
+}
+main .contacts button:hover {
+  box-shadow: 1px 2px 5px 1px gray;
+  transform: translateY(2px);
 }
 main .contacts .links {
-  width: 350px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding-bottom: 45px;
@@ -306,6 +333,89 @@ main .contacts .like {
   font-size: 14px;
   color: #828282;
   text-align: center;
+}
+main .burger {
+  display: none;
+  z-index: 30000;
+  width: max-content;
+  cursor: pointer;
+  padding: 5px;
+  position: fixed;
+  right: 20px;
+  top: 30px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+main .burger div {
+  width: 33px;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 4px;
+}
+main .burger div:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+main .burger:hover + .sub_menu {
+  display: block;
+}
+main .sub_menu {
+  background-color: #FFFFFF;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 1s;
+}
+main .sub_menu ul {
+  width: max-content;
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .sub_menu ul li {
+  margin-bottom: 55px;
+  margin-left: 30px;
+}
+main .sub_menu ul li a {
+  color: #828282;
+  font-size: 30px;
+}
+main .sub_menu ul li:hover a {
+  color: black;
+}
+
+@media (max-width: 767px) {
+  main .burger {
+    display: block;
+  }
+  main .main_mySelf {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 60px;
+  }
+  main .main_mySelf .input {
+    display: none;
+  }
+  main .main_aboutMe {
+    padding-top: 70px;
+  }
+  main .main_skills h2 {
+    padding-bottom: 35px;
+  }
+  main .main_skills p {
+    padding-bottom: 50px;
+  }
+  main .main_skills .applications {
+    flex-direction: column;
+  }
+  main .main_skills .applications .skill:not(:nth-last-child(1)) {
+    padding-bottom: 50px;
+  }
+  main .sub_menu.moveLeft {
+    transform: translateX(100vw);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

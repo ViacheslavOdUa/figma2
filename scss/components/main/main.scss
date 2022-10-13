@@ -23,7 +23,7 @@ main{
 
         }
         .input{
-
+            
             label{padding: 0 0 0 5px;}
             label:first-of-type{
                 padding-right: 10px;
@@ -157,9 +157,14 @@ main{
             color: #FFFFFF;
             border-radius: 20px;
             margin-bottom: 85px;
+            transition: all 100ms;
+        }
+        button:hover{
+            box-shadow: 1px 2px 5px 1px gray;
+            transform: translateY(2px);
         }
         .links{
-            width: 350px;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             padding-bottom: 45px;
@@ -171,4 +176,63 @@ main{
         }
 
     }
+    .burger{
+    display: none;
+    z-index: 30000;
+    width: max-content;
+    cursor: pointer;
+    padding: 5px;
+    position: fixed;
+    right: 20px;
+    top: 30px;
+    border-radius: 5px;
+    border: 2px solid black;
+    div{
+        width: 33px;
+        height: 3px;
+        background-color: black;
+        margin-bottom: 4px;
+        
+        
+    }  
+    div:nth-last-child(1){
+        margin-bottom: 0px;
+
+    } 
 }
+    .burger:hover + .sub_menu{
+        display: block;
+    }
+    .sub_menu{
+            background-color: #FFFFFF;
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 1s;
+        ul{ width: max-content;
+            padding-top: 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            li{
+                margin-bottom:55px;
+                margin-left: 30px;
+                a{
+                    color: #828282;
+                    font-size: 30px;
+                }
+        
+            }
+            li:hover{
+                a{color:black
+
+                }
+            }
+        }
+       
+    }
+}   
+        
+       
