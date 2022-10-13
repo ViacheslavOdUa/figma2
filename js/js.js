@@ -1,6 +1,6 @@
 const subMenu = document.querySelector('.sub_menu');
 const burger = document.querySelector('.burger');
-let num = 2;
+let num = 1;
 const a = function(e){
     num+=1;
     console.log(num);
@@ -11,8 +11,8 @@ const a = function(e){
     };
     return num;
 };
-a();
-a();
+
+
 burger.addEventListener("click", a);
 
 

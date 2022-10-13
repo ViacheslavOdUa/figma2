@@ -362,9 +362,9 @@ main .sub_menu {
   background-color: #FFFFFF;
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
+  left: 100vw;
   transition: all 1s;
 }
 main .sub_menu ul {
@@ -414,7 +414,7 @@ main .sub_menu ul li:hover a {
     padding-bottom: 50px;
   }
   main .sub_menu.moveLeft {
-    transform: translateX(100vw);
+    transform: translateX(-100vw);
   }
 }
 

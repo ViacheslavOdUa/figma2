@@ -207,9 +207,9 @@ main{
             background-color: #FFFFFF;
             width: 100vw;
             height: 100vh;
-            position: absolute;
+            position: fixed;
             top: 0;
-            left: 0;
+            left: 100vw;
             transition: all 1s;
         ul{ width: max-content;
             padding-top: 45px;
