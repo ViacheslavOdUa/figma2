@@ -414,7 +414,7 @@ main .sub_menu ul li:hover a {
     padding-bottom: 50px;
   }
   main .sub_menu.moveLeft {
-    transform: translateX(-100vw);
+    transform: translateX(-90vw);
   }
 }
 
